@@ -1,0 +1,35 @@
+{
+  "phase": "1",
+  "step": "Caller Need / Service Check / Pickup and Drop-Off",
+  "verbiage": [
+    "Hi, thank you for calling GoGo, my name is {{Operator Name}}. How can I help you?",
+    "Alright, thank you for letting me know, {{Caller Name}}. Let\u2019s go ahead and check the coverage in your area"
+  ],
+  "instructions": {
+    "pickup": {
+      "fields": [
+        "Street number",
+        "Street name",
+        "<{{Caller Name}}> Can you spell the street name for me?",
+        "Zip Code"
+      ],
+      "ifNoZip": "Please spell out the city for me"
+    },
+    "dropoff": {
+      "fields": [
+        "Street number",
+        "Street name",
+        "<{{Caller Name}}> Can you spell the street name for me?",
+        "Zip Code"
+      ],
+      "ifNoZip": "Please spell out the city for me"
+    }
+  },
+  "callerTypes": [
+    "Loved One",
+    "Calling for themselves interested in our service",
+    "Already Soft Registered Caller",
+    "One Time Rider",
+    "Emergency Rider"
+  ]
+}
